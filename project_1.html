@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping-pong</title>
+    <style>
+      .background {
+        background: linear-gradient(to bottom, #d9fa9e, #80fbae);
+        margin: 30px 500px;
+        padding: 30px 40px;
+        border-radius: 5px;
+        max-width: 1000px;
+      }
+      h1 {
+        text-align: center;
+        border: 2px solid #379956;
+        padding: 10px 30px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .photo1 {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      hr {
+        border: 1px solid #94dd4d;
+      }
+      .text {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      a {
+        text-decoration: none;
+        color: #2c5f2d;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .title2 {
+        color: #153a27;
+      }
+      .photo2 {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .all {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .block {
+        background-color: rgb(196, 255, 196);
+        color: rgb(5, 63, 41);
+        text-align: center;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .block:hover {
+        background-color: rgb(155, 255, 155);
+        transform: scale(1.05);
+      }
+      button {
+        font-size: 24px;
+        display: block;
+        margin: 20px auto;
+        padding: 15px 40px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 1px 10px black;
+        color: white;
+        background: #468966;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <h1>Table tennis</h1>
+      <h2><i>Also known as ping-pong and whiff-whaff</i></h2>
+      <hr>
+      <img
+        class="photo1"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/188/original/nastolniy-tennis-fitness-690x450.jpg?1653469951"
+        alt="tennis rackets">
+      <hr>
+      <p class="text">
+        <b>Table tennis</b> is a sport in which two or four players hit a
+        lightweight ball, also known as the ping-pong ball, back and forth
+        across a table using small solid rackets. The game takes place on a hard
+        table divided by a net. Except for the initial serve, the rules are
+        generally as follows: players must allow a ball played toward them to
+        bounce once on their side of the table and must return it so that it
+        bounces on the opposite side at least once. A point is scored when a
+        player fails to return the ball within the rules. Play is fast and
+        demands quick reactions. Spinning the ball alters its trajectory and
+        limits an opponent's options, giving the hitter a great advantage.
+      </p>
+
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Table_tennis">Read on Wikipedia</a>
+      <br>
+
+      <hr>
+      <h2 class="title2">The most famous tennis players in the world</h2>
+
+      <div class="all">
+        <div class="block">
+          <img class="photo2" src="cat.avif" />
+          <p>Кіт 1</p>
+        </div>
+
+        <div class="block">
+          <img class="photo2" src="cat.avif" />
+          <p>Кіт 2</p>
+        </div>
+
+        <div class="block">
+          <img class="photo2" src="cat.avif" />
+          <p>Кіт 3</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <button>Try to play 🏓</button>
+    </div>
+
+    <script>
+      function play() {
+        let name = prompt("What is your name?");
+        alert("Thanks " + name + ", we will be in touch 🏓");
+      }
+
+      let butt = document.querySelector("button");
+      butt.addEventListener("click", play);
+    </script>
+
+    
+  </body>
+</html>
